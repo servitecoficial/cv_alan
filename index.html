@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Ivan Acosta - Developer Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .skill-bar {
+            transition: width 1s ease-in-out;
+        }
+
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">Alan Ivan Acosta</div>
+            <div class="space-x-4">
+                <a href="#about" class="hover:text-blue-600 transition">Sobre Mí</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Habilidades</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Proyectos</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <header class="relative" style="height: 60vh;">
+        <img src="img/2.png" alt="Banner de Desarrollador" class="object-cover w-full h-full">
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+            <h1 class="text-5xl font-bold mb-4">Alan Ivan Acosta</h1>
+            <p class="text-2xl mb-6">Desarrollador Full Stack | Profesor de Tecnología</p>
+            <div class="space-x-4">
+                <a href="mailto:acostaalanivan@abc.gob.ar"
+                    class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-full transition">Contáctame</a>
+                <a download="CV Alan Acosta" href="dowload/CV Alan Ivan Acosta Developer.pdf"
+                    class="border-2 border-white hover:bg-white hover:text-black px-6 py-3 rounded-full transition">Descargar
+                    CV</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!--Chat bot-->
+    <script>
+        window.codySettings = { widget_id: '9db57864-fc64-471c-9afa-0912b10af86c' };
+
+        !function () { var t = window, e = document, a = function () { var t = e.createElement("script"); t.type = "text/javascript", t.async = !0, t.src = "https://trinketsofcody.com/cody-widget.js"; var a = e.getElementsByTagName("script")[0]; a.parentNode.insertBefore(t, a) }; "complete" === document.readyState ? a() : t.attachEvent ? t.attachEvent("onload", a) : t.addEventListener("load", a, !1) }();
+    </script>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto py-16 px-4">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Sobre Mí</h2>
+                <p class="mb-4">Soy un desarrollador apasionado con experiencia en desarrollo web, marketing y
+                    pedagogía. Me especializo en crear soluciones tecnológicas innovadoras que resuelven problemas
+                    reales.</p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h3 class="font-bold">Educación</h3>
+                        <p>Tecnicatura en Programación - UNAHUR</p>
+                        <p>Formación Pedagógica - Universidad del Este</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Lenguajes</h3>
+                        <ul>
+                            <li>Español (Nativo)</li>
+                            <li>Inglés (Intermedio)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <img src="img/el que va 2.png" width="50%" alt="Alan Ivan Acosta"
+                    class="rounded-full mx-auto shadow-lg">
+            </div>
+        </div>
+    </section>
+
+<!-- Courses Section -->
+<section id="courses" class="bg-white py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Cursos y Certificaciones</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                <h3 class="font-bold mb-2">Developer Full Stack</h3>
+                <p>COMMIT (Comunidad IT) - Año 2019</p>
+                <ul class="list-disc list-inside mt-2">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Base de Datos</li>
+                    <li>PHP</li>
+                </ul>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                <h3 class="font-bold mb-2">Developer Back End Java</h3>
+                <p>Oracle University - Año 2024</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                <h3 class="font-bold mb-2">IA Generativa en la Abogacía</h3>
+                <p>Universidad de Buenos Aires</p>
+                <p>Curso y programa de uso estratégico y responsable de IA Generativa en la Abogacía.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<center>
+    <!-- Experience Section -->
+<section id="experience" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Experiencia Laboral</h2>
+        <div class="space-y-8">
+            <div>
+                <h3 class="text-2xl font-bold mb-2">Instituto I.D.E.S</h3>
+                <p><strong>SEP 2023 – Actualidad | Modalidad: Presencial</strong></p>
+                <ul class="list-disc list-inside mt-2">
+                    <li>Profesor de Excel, IA y Operador de PC.</li>
+                    <li>Creador y dictado de cursos de programación e inteligencia artificial.</li>
+                    <li>Automatización de procesos administrativos.</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-2">Elite Cobertura Legal Prepaga</h3>
+                <p><strong>JUN 2021 – Actualidad | Modalidad: Freelance</strong></p>
+                <ul class="list-disc list-inside mt-2">
+                    <li>Creación de página web orientada a servicios jurídicos.</li>
+                    <li>Automatización del flujo de ventas de servicios.</li>
+                    <li>Optimización de la experiencia del usuario.</li>
+                    <li>Lenguajes: HTML, CSS, JS, PHP, MySQL.</li>
+                </ul>
+                <a href="https://elitecoberturalegal.com.ar/" class="text-blue-600 hover:underline" target="_blank">Visitar Sitio</a>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-2">GyA Digital</h3>
+                <p><strong>ABR 2024 – Actualidad | Modalidad: Freelance</strong></p>
+                <ul class="list-disc list-inside mt-2">
+                    <li>Restauración del sitio web y creación de estrategias de web marketing (e-commerce).</li>
+                    <li>Organización del equipo con Trello para cumplir objetivos en tiempo determinado.</li>
+                </ul>
+                <a href="https://gyadigital.com.ar/" class="text-blue-600 hover:underline" target="_blank">Visitar Sitio</a>
+            </div>
+        </div>
+    </div>
+</section>
+</center>
+
+    
+    <!-- Skills Section -->
+    <section id="skills" class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Habilidades Técnicas</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <h3 class="font-bold mb-4">Lenguajes de Programación</h3>
+                    <div class="space-y-3">
+                        <div class="bg-gray-200 rounded-full h-4">
+                            <div class="bg-blue-500 h-4 rounded-full skill-bar" style="width: 85%;">PHP</div>
+                        </div>
+                        <div class="bg-gray-200 rounded-full h-4">
+                            <div class="bg-green-500 h-4 rounded-full skill-bar" style="width: 75%;">JavaScript</div>
+                        </div>
+                        <div class="bg-gray-200 rounded-full h-4">
+                            <div class="bg-red-500 h-4 rounded-full skill-bar" style="width: 65%;">HTML/CSS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <h3 class="font-bold mb-4">Herramientas</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Git & GitHub</li>
+                        <li>Visual Studio</li>
+                        <li>Figma</li>
+                        <li>Azure</li>
+                        <li>WordPress</li>
+                        <li>Power BI</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <h3 class="font-bold mb-4">Metodologías</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Scrum</li>
+                        <li>Agile</li>
+                        <li>Data Driven</li>
+                        <li>UI/UX Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto py-16 px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Proyectos Destacados</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md project-card">
+                <center><img src="img/elite.png" width="20%" </center>
+                    <h3 class="font-bold mb-4">Elite Cobertura Legal</h3>
+                    <p>Desarrollo de sitio web para estudio jurídico con integración de API y formularios</p>
+                    <div class="mt-4">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full mr-2">PHP</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full">JavaScript</span>
+                    </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md project-card">
+                <center><img src="img/unahur.jpg" width="50%" alt="">
+                    <h3 class="font-bold mb-4">EstUnahur</h3>
+                </center>
+                <p>Plataforma para gestión académica de estudiantes universitarios</p>
+                <div class="mt-4">
+                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full mr-2">Web App</span>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">Mobile</span>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md project-card">
+                <center><img src="img/Imagen-de-WhatsApp-2023-11-27-a-las-13.31.40_a9e8d110-300x147.jpg" width="40%"
+                        alt="">
+                    <h3 class="font-bold mb-4">Gya Digital</h3>
+                </center>
+                <p>Restauración y marketing web para plataforma e-commerce</p>
+                <div class="mt-4">
+                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full mr-2">WordPress</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">Marketing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Contáctame</h2>
+            <div class="max-w-md mx-auto space-y-4">
+                <a href="mailto:acostaalanivan@abc.gob.ar">Email: acostaalanivan@abc.gob.ar</a>
+                <br>
+                <a href="https://api.whatsapp.com/send/?phone=541154976896&text=Hola%2C+Vengo+de+ver+tu+cv&type=phone_number&app_absent=0">Teléfono: +54 11 54976896</a>
+                <div class="flex justify-center space-x-4">
+                    <a href="https://github.com/servitecoficial" target="_blank" class="hover:text-gray-300">GitHub</a>
+                    <a href="https://www.linkedin.com/in/alan-ivan-acosta-desarrollador-developer-and-data/" target="_blank"
+                        class="hover:text-gray-300">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 text-center">
+        <p>&copy; 2024 Alan Ivan Acosta. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Simple scroll animation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Skill bar animation
+        window.addEventListener('scroll', function () {
+            const skillBars = document.querySelectorAll('.skill-bar');
+            skillBars.forEach(bar => {
+                const barPosition = bar.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.5;
+                if (barPosition < screenPosition) {
+                    bar.style.width = bar.style.width;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
