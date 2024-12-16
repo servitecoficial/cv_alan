@@ -6,42 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alan Ivan Acosta - Developer Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #3498db;
-            --secondary-color: #2ecc71;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            overflow-x: hidden;
-        }
-
-        .parallax-bg {
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .skill-bar {
-            transition: width 1s ease-in-out;
-        }
-
-        .project-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .tx-color {
-            color: #f4f4f4;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-gray-100 text-gray-800">
@@ -160,7 +125,7 @@
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl font-bold text-center mb-12">Experiencia Laboral</h2>
                 <div class="space-y-8">
-                    <div>
+                    <div><img src="img/logo-ides-png-178x77.png" alt="">
                         <h3 class="text-2xl font-bold mb-2">Instituto I.D.E.S</h3>
                         <p><strong>SEP 2023 – Actualidad | Modalidad: Presencial</strong></p>
                         <ul class="list-disc list-inside mt-2">
@@ -169,7 +134,7 @@
                             <li>Automatización de procesos administrativos.</li>
                         </ul>
                     </div>
-                    <div>
+                    <div><img src="img/Sinfondo-logo-150x150.png" width="" alt="">
                         <h3 class="text-2xl font-bold mb-2">Elite Cobertura Legal Prepaga</h3>
                         <p><strong>JUN 2021 – Actualidad | Modalidad: Freelance</strong></p>
                         <ul class="list-disc list-inside mt-2">
@@ -181,7 +146,7 @@
                         <a href="https://elitecoberturalegal.com.ar/" class="text-blue-600 hover:underline"
                             target="_blank">Visitar Sitio</a>
                     </div>
-                    <div>
+                    <div><img src="img/Imagen-de-WhatsApp-2023-11-27-a-las-13.31.40_a9e8d110-300x147.jpg" width="150" alt="">
                         <h3 class="text-2xl font-bold mb-2">GyA Digital</h3>
                         <p><strong>ABR 2024 – Actualidad | Modalidad: Freelance</strong></p>
                         <ul class="list-disc list-inside mt-2">
@@ -306,30 +271,7 @@
     <footer class="bg-gray-800 text-white py-6 text-center">
         <p>&copy; 2024 Alan Ivan Acosta. Todos los derechos reservados.</p>
     </footer>
-
-    <script>
-        // Simple scroll animation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Skill bar animation
-        window.addEventListener('scroll', function () {
-            const skillBars = document.querySelectorAll('.skill-bar');
-            skillBars.forEach(bar => {
-                const barPosition = bar.getBoundingClientRect().top;
-                const screenPosition = window.innerHeight / 1.5;
-                if (barPosition < screenPosition) {
-                    bar.style.width = bar.style.width;
-                }
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
